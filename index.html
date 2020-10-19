@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>IP Address Tracker</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+
+    <div id="search">
+      <h2>IP Address Tracker</h2>
+      <div class="search-form">
+        <form>
+          <div class="form-div">
+            <div class="input-field search-input">
+              <input type="text" placeholder="Search for any IP address or domain" />
+            </div>
+            <div class="input-field button-field">
+              <button class="btn" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+                  <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="result">
+      <div class="result-container">
+        <div class="result-box">
+          <div class="box-item">
+            <h6>IP Address</h6>
+            <p class="ip-address">192.109.104.103</p>
+          </div>
+          <div class="box-item">
+            <h6>Location</h6>
+            <p class="location">Brooklyn, NY, 10001</p>
+          </div>
+          <div class="box-item">
+            <h6>Timezone</h6>
+            <p class="timezone">UTC -05:00</p><!-- add offset value dynamically using the API -->
+          </div>
+          <div class="box-item">
+            <h6>ISP</h6>
+            <p class="isp">SpaceX Starlink</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map">
+      MAP
+    </div>
+
+
+
+
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
