@@ -4,12 +4,20 @@ L.tileLayer("https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=oM5aKScRFfl
 }).addTo(mymap);
 
 
+$.ajax({
+  url: "https://api.ipify.org/",
+  success: function(data) {
+    var defaultIp = data;
+    getIpData(defaultIp);
+  },
+  error: function() {
+    console.log("Couldn't load user IP");
+    var defaultIp = "8.8.8.8"
+    getIpData(defaultIp);
+  }
+});
 
-var defaultIp = "8.8.8.8"
-
-getIpData(defaultIp);
-
-function getIpData(ip){
+function getIpData(ip) {
   var api_key = "at_JsoeLKPhSveXuJeauMJCCDK7pZl9w";
   $(function() {
     $.ajax({
@@ -36,9 +44,10 @@ function getIpData(ip){
         var marker = L.marker([lat, lng]).addTo(mymap);
       }
     });
-  });}
+  });
+}
 
-$("form").submit(function(e){
+$("form").submit(function(e) {
   e.preventDefault();
   var ip = $(this).serializeArray()[0].value;
   getIpData(ip);
