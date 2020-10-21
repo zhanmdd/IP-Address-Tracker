@@ -3,6 +3,8 @@ L.tileLayer("https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=oM5aKScRFfl
   attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
 }).addTo(mymap);
 
+
+
 var defaultIp = "8.8.8.8"
 
 getIpData(defaultIp);

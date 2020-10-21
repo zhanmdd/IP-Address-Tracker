@@ -71,6 +71,7 @@ body {
   display: block;
   width: 100%;
   padding: 10px 32px;
+  border-radius: 10px;
 }
 
 .search-form form .form-div .input-field input:hover, .search-form form .form-div .input-field input:focus {
